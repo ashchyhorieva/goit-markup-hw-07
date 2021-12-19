@@ -1,0 +1,121 @@
+.page-header {
+  background-color: var(--background-color);
+  align-items: center;
+  border-bottom: 1px solid var(--border-color-header);
+  /*padding-top: 24px;
+  padding-bottom: 24px;*/
+}
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+.page-header .logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.link.current {
+  position: relative;
+  color: var(--accent-color);
+}
+.link.current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+/* ----хедер контакты----*/
+.auth-nav .contact {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-flex;
+  align-items: center;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.auth-nav .contact:hover,
+.auth-nav .contact:focus {
+  color: var(--accent-color);
+}
+
+.site-nav {
+  display: flex;
+}
+.site-nav .menu {
+  display: block;
+  margin-right: 50px;
+}
+.site-nav .menu:last-child {
+  margin-right: 0;
+}
+.page-header .auth-nav {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+}
+.auth-nav .auth {
+  display: block;
+  margin-right: 50px;
+}
+.auth-nav .auth:last-child {
+  margin-right: 0;
+}
+.mail-icon {
+  display: inline-block;
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  align-items: center;
+  fill: currentColor;
+}
+.phone-icon {
+  display: inline-block;
+  height: 16px;
+  width: 10px;
+  margin-right: 10px;
+  align-items: center;
+  fill: currentColor;
+}
+/*.contact.link {
+  display: inline-flex;
+  align-items: center;
+}
+.contact.link:hover,
+.contact.link:focus {
+  fill: var(--accent-color);
+}*/
+.nav {
+  display: flex;
+  align-items: center;
+}

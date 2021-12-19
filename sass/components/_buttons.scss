@@ -1,0 +1,31 @@
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: none;
+
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+  text-align: center;
+}
+.button.primary {
+  min-height: 50px;
+  min-width: 200px;
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  align-items: center;
+  letter-spacing: 0.06em;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button.primary:hover,
+.button.primary:focus {
+  color: var(--background-color);
+  background-color: var(--hover-color);
+}

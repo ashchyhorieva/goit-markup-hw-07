@@ -1,0 +1,34 @@
+@import "./utils/variables";
+@import "./base/reset";
+@import "./utils/visually-hidden";
+
+@import "./components/logo";
+
+@import "./base/common";
+@import "./components/section-title";
+
+@import "./components/buttons";
+@import "./components/filter-button";
+
+@import "./components/container";
+
+@import "./components/header";
+
+@import "./loyaut/hero";
+@import "./loyaut/feature-section";
+@import "./loyaut/working-section";
+@import "./loyaut/team-section";
+@import "./loyaut/client-section";
+
+@import "./components/footer";
+
+@import "./loyaut/filter-section";
+@import "./loyaut/portfolio-section";
+
+@import "./components/portfolio-card";
+@import "./components/card-overlay";
+@import "./components/card-description";
+
+@import "./components/backdrop";
+@import "./components/modalka";
+@import "./components/form-modal";

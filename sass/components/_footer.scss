@@ -1,0 +1,119 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-color);
+}
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.footer .logo .studio {
+  color: var(--background-color);
+}
+.footer-address,
+.address {
+  color: var(--background-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address:hover,
+.address:focus {
+  color: var(--accent-color);
+}
+.footer-address .contact {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+
+  padding: 0;
+}
+.footer .address {
+  margin-bottom: 9px;
+}
+
+.footer .mail {
+  margin-bottom: 9px;
+}
+.footer-social .social-link {
+  fill: white;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social.title,
+.subscribe.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+.footer-social,
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-social {
+  margin-right: 93px;
+}
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-contact {
+  flex-grow: 1;
+  margin-right: 70px;
+}
+.footer-form {
+  display: flex;
+  align-items: center;
+  width: 570px;
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  margin: 0px;
+
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  background-color: var(--footer-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--background-color);
+
+  transition-property: filter;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-input:hover,
+.footer-input:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.subscribe-label {
+  margin-right: 12px;
+}
+.footer .button.primary {
+  display: flex;
+  padding-left: 29px;
+  padding-right: 28px;
+  justify-content: space-between;
+}

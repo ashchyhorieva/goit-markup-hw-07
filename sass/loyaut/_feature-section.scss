@@ -1,0 +1,44 @@
+.feature.list {
+  display: flex;
+}
+.feature.list .name {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+  margin-right: 30px;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*height: 100%;
+  width: 100%;*/
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+  background-position: center;
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+  /*padding-top: 25px;
+  padding-bottom: 25px;*/
+}
+.feature.list .name:last-child {
+  margin-right: 0;
+}
+.feature .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.feature.description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+}
