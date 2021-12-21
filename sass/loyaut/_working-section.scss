@@ -4,13 +4,16 @@
 .list.working {
   display: flex;
 }
-.list.working .image {
-  flex-basis: calc((100% - 2 * 30px) / 3);
-  margin-right: 30px;
+.list.working {
+  .image {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
-.list.working .image:last-child {
-  margin-right: 0;
-}
+
 .image-thumb {
   position: relative;
   overflow: hidden;

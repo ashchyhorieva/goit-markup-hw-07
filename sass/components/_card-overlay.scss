@@ -21,10 +21,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.flex-element .link:hover .text-overlay,
-.flex-element .link:focus .text-overlay {
-  transform: translateY(0%);
-}
+/*.flex-element {
+  .link:hover .text-overlay,
+  .link:focus .text-overlay {
+    transform: translateY(0%);
+  }
+}*/
 .portfolio-overlay {
   position: absolute;
   top: 50%;
