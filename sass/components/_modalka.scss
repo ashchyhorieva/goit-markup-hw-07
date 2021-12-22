@@ -11,17 +11,18 @@
   opacity: 1;
 
   transition-property: transform, opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation-durationandtiming();
 }
 .close {
   position: absolute;
   top: 8px;
   right: 8px;
 
-  display: flex;
+  @include flex-centered();
+  //display: flex;
+  //align-items: center;
   justify-content: center;
-  align-items: center;
+
   width: 30px;
   height: 30px;
   background-color: white;
@@ -37,8 +38,7 @@
   fill: currentColor;
 
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation-durationandtiming();
   &:hover,
   &:focus {
     fill: var(--accent-color);

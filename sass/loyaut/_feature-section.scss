@@ -13,37 +13,36 @@
 }
 
 .icon {
-  display: flex;
-  align-items: center;
+  @include flex-centered();
+  //display: flex;
+  //align-items: center;
   justify-content: center;
-  /*height: 100%;
-  width: 100%;*/
+
   background-color: var(--secondary-background-color);
   border-radius: 4px;
+
   background-position: center;
+
   height: 120px;
   width: 270px;
+
   margin-bottom: 30px;
-  /*padding-top: 25px;
-  padding-bottom: 25px;*/
 }
 
 .feature {
   .title {
     margin-top: 0;
     margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    @extend %BOLD-TEXT-14;
   }
 }
 .feature.description {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 14px;
-  line-height: 1.71;
-  /* or 171% */
-  letter-spacing: 0.03em;
+
+  @include text-fw400(14px, 1.71, 00.03em);
+  //font-size: 14px;
+  //line-height: 1.71;
+  ///* or 171% */
+  //letter-spacing: 0.03em;
 }

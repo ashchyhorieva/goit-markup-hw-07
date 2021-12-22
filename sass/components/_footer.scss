@@ -19,15 +19,16 @@
 .footer-address,
 .address {
   color: var(--background-color);
+
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  /* or 171% */
-  letter-spacing: 0.03em;
+  @include text-fw400(14px, 1.71, 00.03em);
+  //font-size: 14px;
+  //line-height: 1.71;
+  ///* or 171% */
+  //letter-spacing: 0.03em;
 
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation-durationandtiming();
 }
 .address {
   &:hover,
@@ -37,7 +38,6 @@
 }
 .footer-address {
   .contact {
-    font-weight: 400;
     color: rgba(255, 255, 255, 0.6);
 
     padding: 0;
@@ -59,34 +59,31 @@
     fill: white;
 
     transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation-durationandtiming();
   }
 }
 .social.title,
 .subscribe.title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  @extend %BOLD-TEXT-14;
   color: white;
   margin-bottom: 20px;
   margin-top: 0px;
 }
 .footer-social,
 .footer-subscribe {
-  display: flex;
+  @include flex-centered(flex-start);
+  //display: flex;
+  //align-items: flex-start;
   flex-direction: column;
-  align-items: flex-start;
 }
 .footer-social {
   margin-right: 93px;
 }
 .footer {
   .container {
-    display: flex;
-    align-items: baseline;
+    @include flex-centered(baseline);
+    //display: flex;
+    //align-items: baseline;
   }
 }
 .footer-contact {
@@ -94,8 +91,7 @@
   margin-right: 70px;
 }
 .footer-form {
-  display: flex;
-  align-items: center;
+  @include flex-centered();
   width: 570px;
 }
 .footer-input {
@@ -113,14 +109,14 @@
   border-radius: 4px;
   outline: none;
 
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
+  @include text-fw400(14px, 1.14, 00.01em);
+  //font-size: 14px;
+  //line-height: 1.14;
+  //letter-spacing: 0.01em;
   color: var(--background-color);
 
   transition-property: filter;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation-durationandtiming();
   &:hover,
   &:focus {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -136,8 +132,8 @@
 .footer {
   .button.primary {
     display: flex;
+    justify-content: space-between;
     padding-left: 29px;
     padding-right: 28px;
-    justify-content: space-between;
   }
 }

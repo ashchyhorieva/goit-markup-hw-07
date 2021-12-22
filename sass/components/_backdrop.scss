@@ -9,8 +9,9 @@
   opacity: 1;
 
   transition-property: transform, opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation-durationandtiming();
+  //transition-duration: 250ms;
+  //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {

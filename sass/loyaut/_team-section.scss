@@ -15,10 +15,10 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     &:last-child {
-    margin-right: 0;
+      margin-right: 0;
+    }
   }
 }
-  }
 
 .team-card {
   padding-top: 30px;
@@ -28,22 +28,26 @@
   .title {
     margin-top: 0;
     margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    /* identical to box height */
+
+    @include text(500, 16px, 1.19, 00.03em);
     text-align: center;
-    letter-spacing: 0.03em;
+    //font-weight: 500;
+    //font-size: 16px;
+    //line-height: 1.19;
+    ///* identical to box height */
+    //letter-spacing: 0.03em;
   }
 }
 .team.description {
   margin-top: 0;
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.19;
-  /* identical to box height */
+
+  @include text-fw400(16px, 1.19, 00.03em);
   text-align: center;
-  letter-spacing: 0.03em;
+  //font-size: 16px;
+  //line-height: 1.19;
+  ///* identical to box height */
+  //letter-spacing: 0.03em;
 }
 
 .social-link {

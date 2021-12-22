@@ -5,11 +5,13 @@
   padding: 40px;
 }
 .modal-header {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.03em;
+
+  @include text(700, 20px, 1.15, 00.03em);
+  //font-weight: 700;
+  //font-size: 20px;
+  //line-height: 1.15;
+  //letter-spacing: 0.03em;
 
   color: var(--title-text-color);
 
@@ -25,11 +27,11 @@
 
   margin-bottom: 10px;
 
-  font-size: 12px;
-  line-height: 1.16;
-  /* identical to box height */
-
-  letter-spacing: 0.01em;
+  @include text-fw400(12px, 1.16, 0.01em);
+  //font-size: 12px;
+  //line-height: 1.16;
+  ///* identical to box height */
+  //letter-spacing: 0.01em;
 
   color: var(--text-color);
   &:nth-child(4) {
@@ -51,14 +53,14 @@
   border-radius: 4px;
   outline: none;
 
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
+  @include text-fw400(14px, 1.14, 00.01em);
+  //font-size: 14px;
+  //line-height: 1.14;
+  //letter-spacing: 0.01em;
   color: var(--text-color);
 
   transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation-durationandtiming();
   &:focus {
     border: 1px solid var(--accent-color);
   }
@@ -66,9 +68,10 @@
     fill: var(--accent-color);
   }
   &::placeholder {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
+    @include text-fw400(14px, 1.14, 00.01em);
+    //font-size: 14px;
+    //line-height: 1.14;
+    //letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
 }
@@ -84,8 +87,7 @@
   fill: currentColor;
 
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation-durationandtiming();
 }
 
 .modal-input.comment {
@@ -98,18 +100,19 @@
 }
 
 .modal-label.check {
-  display: flex;
+  @include flex-centered();
+  //display: flex;
+  //align-items: center;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
 
   margin-bottom: 30px;
 
-  font-size: 14px;
-  line-height: 1.71;
-  /* identical to box height, or 171% */
-
-  letter-spacing: 0.03em;
+  @include text-fw400(14px, 1.71, 00.03em);
+  //font-size: 14px;
+  //line-height: 1.71;
+  ///* identical to box height, or 171% */
+  //letter-spacing: 0.03em;
 
   color: var(--text-color);
 }
@@ -139,8 +142,7 @@
   margin: auto;
 }
 .check-item {
-  display: flex;
-  align-items: center;
+  @include flex-centered();
   justify-content: center;
 
   height: 15px;
@@ -152,8 +154,7 @@
   border-radius: 2px;
 
   transition-property: color, background-color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation-durationandtiming();
   &:hover,
   &:focus {
     border: 2px solid var(--accent-color);

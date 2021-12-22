@@ -7,8 +7,7 @@
 }
 .page-header {
   .container {
-    display: flex;
-    align-items: center;
+    @include flex-centered();
   }
 }
 .page-header {
@@ -21,16 +20,18 @@
 .site-nav {
   .link {
     color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+
+    @include text(500, 14px, 1.14, 00.02em);
+    //font-weight: 500;
+    //font-size: 14px;
+    //line-height: 1.14;
+    //letter-spacing: 0.02em;
+
     padding-top: 32px;
     padding-bottom: 32px;
 
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation-durationandtiming();
     &:hover,
     &:focus {
       color: var(--accent-color);
@@ -59,18 +60,21 @@
 .auth-nav {
   .contact {
     color: var(--text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+
+    @include text(500, 14px, 1.14, 00.02em);
+    //font-weight: 500;
+    //font-size: 14px;
+    //line-height: 1.14;
+    //letter-spacing: 0.02em;
+
     padding-top: 32px;
     padding-bottom: 32px;
+
     display: inline-flex;
     align-items: center;
 
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation-durationandtiming();
     &:hover,
     &:focus {
       color: var(--accent-color);
@@ -93,9 +97,10 @@
 
 .page-header {
   .auth-nav {
-    display: flex;
+    @include flex-centered();
+    //display: flex;
+    //align-items: center;
     margin-left: auto;
-    align-items: center;
     justify-content: center;
   }
 }
@@ -104,29 +109,36 @@
     display: block;
     margin-right: 50px;
     &:last-child {
-    margin-right: 0;
-  }
+      margin-right: 0;
+    }
   }
 }
 
 .mail-icon {
-  display: inline-block;
+  @extend %header-contact-icon;
+
   height: 12px;
   width: 16px;
-  margin-right: 10px;
-  align-items: center;
-  fill: currentColor;
+  //display: inline-block;
+  //align-items: center;
+
+  //margin-right: 10px;
+
+  //fill: currentColor;
 }
 .phone-icon {
-  display: inline-block;
+  @extend %header-contact-icon;
+
   height: 16px;
   width: 10px;
-  margin-right: 10px;
-  align-items: center;
-  fill: currentColor;
+  //display: inline-block;
+  //align-items: center;
+
+  //margin-right: 10px;
+
+  //fill: currentColor;
 }
 
 .nav {
-  display: flex;
-  align-items: center;
+  @include flex-centered();
 }

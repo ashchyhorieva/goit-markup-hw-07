@@ -157,6 +157,22 @@ summary {
   --black-color: black;
 }
 
+.feature .title, .social.title,
+.subscribe.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.mail-icon, .phone-icon {
+  display: inline-block;
+  align-items: center;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 img {
   display: block;
 }
@@ -234,30 +250,29 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .button {
   display: inline-block;
+  text-align: center;
   border-radius: 4px;
   padding: 10px 32px;
   border: none;
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
-  text-align: center;
 }
 
 .button.primary {
   min-height: 50px;
   min-width: 200px;
+  align-items: center;
   color: var(--background-color);
   background-color: var(--accent-color);
   font-weight: 700;
-  font-size: 16px;
+  font-size: 16;
   line-height: 1.87;
-  /* identical to box height, or 187% */
-  align-items: center;
   letter-spacing: 0.06em;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -275,7 +290,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  /* identical to box height, or 162% */
   letter-spacing: 0.03em;
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
@@ -398,8 +412,8 @@ body {
 
 .page-header .auth-nav {
   display: flex;
-  margin-left: auto;
   align-items: center;
+  margin-left: auto;
   justify-content: center;
 }
 
@@ -413,21 +427,13 @@ body {
 }
 
 .mail-icon {
-  display: inline-block;
   height: 12px;
   width: 16px;
-  margin-right: 10px;
-  align-items: center;
-  fill: currentColor;
 }
 
 .phone-icon {
-  display: inline-block;
   height: 16px;
   width: 10px;
-  margin-right: 10px;
-  align-items: center;
-  fill: currentColor;
 }
 
 .nav {
@@ -481,26 +487,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*height: 100%;
-  width: 100%;*/
   background-color: var(--secondary-background-color);
   border-radius: 4px;
   background-position: center;
   height: 120px;
   width: 270px;
   margin-bottom: 30px;
-  /*padding-top: 25px;
-  padding-bottom: 25px;*/
 }
 
 .feature .title {
   margin-top: 0;
   margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 .feature.description {
@@ -508,7 +505,6 @@ body {
   margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
 }
 
@@ -555,8 +551,8 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--overlay-text-color);
 }
@@ -593,9 +589,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team.description {
@@ -603,9 +598,8 @@ body {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .social-link:hover, .social-link:focus {
@@ -631,12 +625,12 @@ body {
 
 .social-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   padding: 0px;
-  justify-content: center;
-  align-items: center;
   fill: var(--icon-page);
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color, fill;
@@ -655,10 +649,10 @@ body {
 
 .client-item {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
-  justify-content: center;
-  align-items: center;
   padding: 0;
   margin-right: 30px;
 }
@@ -669,12 +663,12 @@ body {
 
 .client-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-page);
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
   padding: 0;
   color: var(--icon-page);
   transition-property: color, border;
@@ -720,7 +714,6 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
   transition-property: color;
   transition-duration: 250ms;
@@ -732,7 +725,6 @@ body {
 }
 
 .footer-address .contact {
-  font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   padding: 0;
 }
@@ -754,11 +746,6 @@ body {
 
 .social.title,
 .subscribe.title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: white;
   margin-bottom: 20px;
   margin-top: 0px;
@@ -767,8 +754,8 @@ body {
 .footer-social,
 .footer-subscribe {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
 }
 
 .footer-social {
@@ -826,9 +813,9 @@ body {
 
 .footer .button.primary {
   display: flex;
+  justify-content: space-between;
   padding-left: 29px;
   padding-right: 28px;
-  justify-content: space-between;
 }
 
 .section.filter .list {
@@ -921,10 +908,8 @@ body {
   transform: translate(-50%, -50%);
   margin: 0;
   width: 322px;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
-  /* or 156% */
   letter-spacing: 0.03em;
   color: var(--overlay-text-color);
 }
@@ -933,18 +918,16 @@ body {
   margin-top: 0;
   margin-bottom: 4px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 18;
   line-height: 2;
-  /* identical to box height, or 200% */
   letter-spacing: 0.06em;
 }
 
 .portfolio .description {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 16;
   line-height: 1.87;
-  /* identical to box height, or 187% */
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
@@ -993,8 +976,8 @@ body {
   top: 8px;
   right: 8px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   background-color: white;
@@ -1029,10 +1012,10 @@ body {
 }
 
 .modal-header {
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   padding: 0;
@@ -1047,7 +1030,6 @@ body {
   margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.16;
-  /* identical to box height */
   letter-spacing: 0.01em;
   color: var(--text-color);
 }
@@ -1115,13 +1097,12 @@ body {
 
 .modal-label.check {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
   justify-content: center;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
-  /* identical to box height, or 171% */
   letter-spacing: 0.03em;
   color: var(--text-color);
 }

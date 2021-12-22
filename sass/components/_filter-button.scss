@@ -1,15 +1,17 @@
 .button.filter {
   padding: 6px 22px;
   min-width: 73px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  /* identical to box height, or 162% */
-  letter-spacing: 0.03em;
+
+  @include text(500, 16px, 1.62, 00.03em);
+  //font-weight: 500;
+  //font-size: 16px;
+  //line-height: 1.62;
+  ///* identical to box height, or 162% */
+  //letter-spacing: 0.03em;
 
   transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation-durationandtiming();
+
   &:hover,
   &:focus {
     color: var(--background-color);
@@ -24,8 +26,8 @@
   background-color: var(--accent-color);
 
   transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation-durationandtiming();
+
   &:hover,
   &:focus {
     color: var(--background-color);

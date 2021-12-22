@@ -2,21 +2,25 @@
   .title {
     margin-top: 0;
     margin-bottom: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    /* identical to box height, or 200% */
-    letter-spacing: 0.06em;
+
+    @include text(700, 18, 2, 00.06em);
+    //font-weight: 700;
+    //font-size: 18px;
+    //line-height: 2;
+    ///* identical to box height, or 200% */
+    //letter-spacing: 0.06em;
   }
 }
 .portfolio {
   .description {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 16px;
-    line-height: 1.87;
-    /* identical to box height, or 187% */
-    letter-spacing: 0.03em;
+
+    @include text-fw400(16, 1.87, 00.03em);
+    //font-size: 16px;
+    //line-height: 1.87;
+    ///* identical to box height, or 187% */
+    //letter-spacing: 0.03em;
 
     color: var(--text-color);
   }
