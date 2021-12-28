@@ -4,7 +4,7 @@
 
   padding: 40px;
 }
-.modal-header {
+.form-container__modal-header {
   text-align: center;
 
   @include text(700, 20px, 1.15, 00.03em);
@@ -19,7 +19,7 @@
   margin-top: 0px;
   margin-bottom: 12px;
 }
-.modal-label {
+.form-container__modal-label {
   position: relative;
 
   display: flex;
@@ -39,7 +39,7 @@
   }
 }
 
-.modal-input {
+.form-container__modal-input {
   display: block;
   width: 448px;
   height: 40px;
@@ -64,7 +64,7 @@
   &:focus {
     border: 1px solid var(--accent-color);
   }
-  &:focus + .modal-icon {
+  &:focus + .form-container__modal-icon {
     fill: var(--accent-color);
   }
   &::placeholder {
@@ -75,7 +75,7 @@
     color: rgba(117, 117, 117, 0.5);
   }
 }
-.modal-icon {
+.form-container__modal-icon {
   position: absolute;
   left: 12px;
   bottom: 11px;
@@ -90,7 +90,7 @@
   @include animation-durationandtiming();
 }
 
-.modal-input.comment {
+.form-container__modal-input.comment {
   min-height: 120px;
   resize: none;
   padding-top: 12px;
@@ -99,7 +99,7 @@
   padding-right: 16px;
 }
 
-.modal-label.check {
+.form-container__modal-label.check {
   @include flex-centered();
   //display: flex;
   //align-items: center;
@@ -116,7 +116,7 @@
 
   color: var(--text-color);
 }
-.modal-input.checkbox {
+.form-container__modal-input.checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -125,23 +125,23 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-  &:checked + .check-item {
+  &:checked + .form-container__check-item {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
   }
 }
-.modal-label {
+.form-container__modal-label {
   .link {
     text-decoration-line: underline;
 
     color: var(--accent-color);
   }
 }
-.button.send {
+.form-send {
   display: block;
   margin: auto;
 }
-.check-item {
+.form-container__check-item {
   @include flex-centered();
   justify-content: center;
 
@@ -160,6 +160,6 @@
     border: 2px solid var(--accent-color);
   }
 }
-.check-icon {
+.form-container__check-icon {
   fill: white;
 }

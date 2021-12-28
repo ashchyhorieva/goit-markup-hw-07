@@ -13,7 +13,7 @@
   transition-property: transform, opacity;
   @include animation-durationandtiming();
 }
-.close {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -30,7 +30,7 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.close-icon {
+.modal__close-icon {
   position: absolute;
   width: 18px;
   height: 18px;
