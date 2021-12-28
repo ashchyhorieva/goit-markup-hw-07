@@ -157,7 +157,7 @@ summary {
   --black-color: black;
 }
 
-.feature-section__item, .social.title,
+.feature-section__title, .social.title,
 .subscribe.title {
   font-weight: 700;
   font-size: 14px;
@@ -500,7 +500,7 @@ body {
   margin-bottom: 10px;
 }
 
-.feature-section__text {
+.feature-section__description {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
