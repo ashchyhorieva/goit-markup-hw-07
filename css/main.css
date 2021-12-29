@@ -157,8 +157,8 @@ summary {
   --black-color: black;
 }
 
-.feature-section__title, .social.title,
-.subscribe.title {
+.feature-section__title, .footer-social__social-title,
+.footer-subscribe__subscribe-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -723,35 +723,32 @@ body {
   color: var(--accent-color);
 }
 
-.footer-address .contact {
+.footer-contact__contact {
   color: rgba(255, 255, 255, 0.6);
   padding: 0;
+  font-style: normal;
 }
 
-.footer .address {
+.footer-address__address {
   margin-bottom: 9px;
 }
 
-.footer .mail {
+.footer-contact__mail {
   margin-bottom: 9px;
 }
 
-.footer-social .social-link {
+.footer-socail__link {
   fill: white;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social.title,
-.subscribe.title {
+.footer-social__social-title,
+.footer-subscribe__subscribe-title {
   color: white;
   margin-bottom: 20px;
   margin-top: 0px;
-}
-
-.footer-social,
-.footer-subscribe {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -771,13 +768,13 @@ body {
   margin-right: 70px;
 }
 
-.footer-form {
+.footer-subscribe__footer-form {
   display: flex;
   align-items: center;
   width: 570px;
 }
 
-.footer-input {
+.footer-form__input {
   width: 358px;
   height: 50px;
   margin: 0px;
@@ -798,19 +795,19 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-input:hover, .footer-input:focus {
+.footer-form__input:hover, .footer-form__input:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.footer-input::placeholder {
+.footer-form__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-label {
+.footer-form__subscribe-label {
   margin-right: 12px;
 }
 
-.footer .button.primary {
+.footer-form__button_primary {
   display: flex;
   justify-content: space-between;
   padding-left: 29px;
