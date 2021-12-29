@@ -1,4 +1,4 @@
-.button.filter {
+.list-filter__button-filter {
   padding: 6px 22px;
   min-width: 73px;
 
@@ -21,7 +21,7 @@
   }
 }
 
-.button.filter.current {
+.list-filter__button-filter_current {
   color: var(--background-color);
   background-color: var(--accent-color);
 
