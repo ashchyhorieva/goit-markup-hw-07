@@ -1,8 +1,8 @@
-.client {
+.client-section__list {
   display: flex;
   justify-content: center;
 }
-.client-item {
+.client-list__item {
   @include flex-centered();
   //display: flex;
   //align-items: center;
@@ -18,7 +18,7 @@
   }
 }
 
-.client-link {
+.client-list__link {
   @include flex-centered();
   //display: flex;
   //align-items: center;
@@ -41,7 +41,7 @@
     border: 1px solid var(--accent-color);
   }
 }
-.client-icon {
+.client-list__icon {
   fill: currentColor;
 
   transition-property: fill;

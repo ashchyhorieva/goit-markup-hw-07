@@ -3,21 +3,16 @@
   padding-bottom: 60px;
   background-color: var(--footer-color);
 }
-.footer {
-  .logo {
-    display: inline-block;
-    margin-bottom: 20px;
-  }
+.footer-contact__logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
-.footer {
-  .logo {
-    .studio {
-      color: var(--background-color);
-    }
-  }
+
+.studio_white {
+  color: var(--background-color);
 }
-.footer-address,
-.address {
+
+.footer-address__address {
   color: var(--background-color);
 
   font-style: normal;
@@ -30,12 +25,13 @@
   transition-property: color;
   @include animation-durationandtiming();
 }
-.address {
+.footer-address__address {
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
+
 .footer-address {
   .contact {
     color: rgba(255, 255, 255, 0.6);

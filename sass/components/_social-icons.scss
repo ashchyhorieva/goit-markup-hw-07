@@ -3,7 +3,7 @@
   justify-content: center;
 }
 
-.social-item {
+.social__item {
   display: flex;
   width: 44px;
   height: 44px;
@@ -13,7 +13,7 @@
   }
 }
 
-.social-link {
+.social__link {
   @include flex-centered();
   //display: flex;
   //align-items: center;
@@ -30,6 +30,6 @@
   transition-property: background-color, fill;
   @include animation-durationandtiming();
 }
-.social-icon {
+.social__icon {
   color: currentColor;
 }
