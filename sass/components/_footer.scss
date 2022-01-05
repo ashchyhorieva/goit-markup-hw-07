@@ -3,36 +3,49 @@
   padding-bottom: 60px;
   background-color: var(--footer-color);
 }
-.footer-contact__logo {
-  display: inline-block;
-  margin-bottom: 20px;
+.footer {
+  .container {
+    @include flex-centered(baseline);
+    //display: flex;
+    //align-items: baseline;
+  }
 }
 
-.studio_white {
+.footer {
+  .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+.logo__white {
   color: var(--background-color);
 }
 
-.footer-address__address {
+.footer-contacts {
+  flex-grow: 1;
+  margin-right: 70px;
+}
+
+.footer-contacts {
+  @include text-fw400(14px, 1.71, 0.03em);
+}
+
+.footer__address {
   color: var(--background-color);
+  margin-bottom: 9px;
 
   font-style: normal;
-  @include text-fw400(14px, 1.71, 00.03em);
-  //font-size: 14px;
-  //line-height: 1.71;
-  ///* or 171% */
-  //letter-spacing: 0.03em;
 
   transition-property: color;
   @include animation-durationandtiming();
-}
-.footer-address__address {
+
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
 
-.footer-contact__contact {
+.footer-contacts__link {
   color: rgba(255, 255, 255, 0.6);
 
   padding: 0;
@@ -40,11 +53,7 @@
   font-style: normal;
 }
 
-.footer-address__address {
-  margin-bottom: 9px;
-}
-
-.footer-contact__mail {
+.footer__mail {
   margin-bottom: 9px;
 }
 
@@ -55,8 +64,7 @@
   @include animation-durationandtiming();
 }
 
-.footer-social__social-title,
-.footer-subscribe__subscribe-title {
+.footer__title {
   @extend %BOLD-TEXT-14;
   color: white;
   margin-bottom: 20px;
@@ -70,18 +78,8 @@
 .footer-social {
   margin-right: 93px;
 }
-.footer {
-  .container {
-    @include flex-centered(baseline);
-    //display: flex;
-    //align-items: baseline;
-  }
-}
-.footer-contact {
-  flex-grow: 1;
-  margin-right: 70px;
-}
-.footer-subscribe__footer-form {
+
+.footer-form {
   @include flex-centered();
   width: 570px;
 }
@@ -117,12 +115,14 @@
   }
 }
 
-.footer-form__subscribe-label {
+.footer-form__label {
   margin-right: 12px;
 }
-.footer-form__button_primary {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 29px;
-  padding-right: 28px;
+.footer {
+  .button--primary {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 29px;
+    padding-right: 28px;
+  }
 }

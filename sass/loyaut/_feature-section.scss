@@ -1,16 +1,19 @@
-.feature-section__list {
+.features {
   display: flex;
 }
-.feature-section__item {
+.features__item {
   flex-basis: calc((100% - 3 * 30px) / 4);
-  margin-right: 30px;
+
   align-items: center;
+  margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 10px;
   &:last-child {
     margin-right: 0;
   }
 }
 
-.feature-section__icon {
+.features__box {
   @include flex-centered();
   //display: flex;
   //align-items: center;
@@ -27,16 +30,11 @@
   margin-bottom: 30px;
 }
 
-.feature-section__item {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.feature-section__title {
+.features__title {
   @extend %BOLD-TEXT-14;
 }
 
-.feature-section__description {
+.features__description {
   margin-top: 0;
   margin-bottom: 0;
 

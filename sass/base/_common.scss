@@ -5,12 +5,12 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-.list {
+ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.link {
+a {
   text-decoration: none;
   margin: 0;
   display: block;
@@ -19,9 +19,10 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.title {
-  color: var(--title-text-color);
+
+.section--no-padding-top {
+  padding-top: 0px;
 }
-.cursor {
-  cursor: pointer;
+.section--other-background {
+  background-color: var(--secondary-background-color);
 }

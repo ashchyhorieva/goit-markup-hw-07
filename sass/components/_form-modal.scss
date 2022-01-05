@@ -137,9 +137,11 @@
     color: var(--accent-color);
   }
 }
-.form-send {
-  display: block;
-  margin: auto;
+.form-container {
+  .button {
+    display: block;
+    margin: auto;
+  }
 }
 .form-container__check-item {
   @include flex-centered();

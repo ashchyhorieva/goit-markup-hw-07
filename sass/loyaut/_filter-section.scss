@@ -1,12 +1,10 @@
-.filter-section__list-filter {
+.filter {
   display: flex;
   justify-content: center;
-}
 
-.list-filter {
   margin-bottom: 50px;
 }
-.list-filter__list-button {
+.filter__item {
   &:not(:last-child) {
     margin-right: 8px;
   }

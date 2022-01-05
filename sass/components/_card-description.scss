@@ -1,6 +1,8 @@
-.portfolio-card__title {
+.portfolio__title {
   margin-top: 0;
   margin-bottom: 4px;
+
+  color: var(--title-text-color);
 
   @include text(700, 18, 2, 00.06em);
   //font-weight: 700;
@@ -10,7 +12,7 @@
   //letter-spacing: 0.06em;
 }
 
-.portfolio-card__description {
+.portfolio__description {
   margin-top: 0;
   margin-bottom: 0;
 
